@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prizes - LuckyDraw</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <!-- Menu Button -->
+    <button class="icon-btn" aria-label="Menu">
+      <i id="menu-btn" class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="logo">
+      <div class="logo-ar">حلم</div>
+      <div class="logo-en">DREAM</div>
+    </div>
+    <button id="lang-btn" class="icon-btn">EN 🌐</button>
+  </header>
+
+  <!-- Language Selector Modal -->
+  <div id="lang-modal" class="lang-modal" aria-hidden="true">
+    <div class="lang-box">
+      <h3>Select Language</h3>
+      <ul class="lang-list">
+        <li data-lang="en">English</li>
+        <li data-lang="ar">العربية</li>
+        <li data-lang="fr">Français</li>
+        <li data-lang="es">Español</li>
+        <li data-lang="de">Deutsch</li>
+        <li data-lang="zh">中文</li>
+        <li data-lang="hi">हिन्दी</li>
+        <li data-lang="pt">Português</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Side menu -->
+  <nav id="side-menu" class="side-menu" aria-hidden="true">
+    <div class="menu-inner">
+      <button id="menu-close" class="back-btn">←</button>
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="winners.html">Winners</a></li>
+        <li><a href="prizes.html">Prizes</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">F.A.Q</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="prizes-page">
+    <section class="section-card">
+      <h2>Exclusive Prizes 🎉</h2>
+      <p>Win amazing rewards and life-changing prizes by participating in our lucky draws!</p>
+    </section>
+
+    <section class="prizes-list">
+      <div class="prize-card">
+        <h3>💰 Grand Jackpot</h3>
+        <p>Win up to <strong>$100,000</strong> in cash. Our biggest prize for the luckiest winner!</p>
+      </div>
+
+      <div class="prize-card">
+        <h3>🚗 Luxury Car</h3>
+        <p>Drive home a brand-new luxury vehicle — comfort, class, and prestige combined.</p>
+      </div>
+
+      <div class="prize-card">
+        <h3>🏠 Dream Home</h3>
+        <p>Receive the keys to your dream home in a prime city location with full furnishings.</p>
+      </div>
+
+      <div class="prize-card">
+        <h3>📱 Premium Gadgets</h3>
+        <p>Get the latest smartphones, laptops, and smartwatches — cutting-edge tech for you!</p>
+      </div>
+
+      <div class="prize-card">
+        <h3>✈️ Holiday Getaway</h3>
+        <p>Enjoy an all-expense-paid trip to a tropical paradise — rest, explore, and relax.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; <span id="year"></span> LuckyDraw. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

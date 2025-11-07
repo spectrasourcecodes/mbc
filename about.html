@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - LuckyDraw</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <!-- Menu Button -->
+    <button class="icon-btn" aria-label="Menu">
+      <i id="menu-btn" class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="logo">
+      <div class="logo-ar">حلم</div>
+      <div class="logo-en">DREAM</div>
+    </div>
+    <button id="lang-btn" class="icon-btn">EN 🌐</button>
+  </header>
+
+  <!-- Language Selector Modal -->
+  <div id="lang-modal" class="lang-modal" aria-hidden="true">
+    <div class="lang-box">
+      <h3>Select Language</h3>
+      <ul class="lang-list">
+        <li data-lang="en">English</li>
+        <li data-lang="ar">العربية</li>
+        <li data-lang="fr">Français</li>
+        <li data-lang="es">Español</li>
+        <li data-lang="de">Deutsch</li>
+        <li data-lang="zh">中文</li>
+        <li data-lang="hi">हिन्दी</li>
+        <li data-lang="pt">Português</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Side menu -->
+  <nav id="side-menu" class="side-menu" aria-hidden="true">
+    <div class="menu-inner">
+      <button id="menu-close" class="back-btn">←</button>
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="winners.html">Winners</a></li>
+        <li><a href="prizes.html">Prizes</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">F.A.Q</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="about-page">
+    <section class="section-card">
+      <h2>About LuckyDraw</h2>
+      <p>LuckyDraw is a transparent and fair reward platform that gives participants a chance to win incredible prizes ranging from cash rewards to luxury gifts.</p>
+    </section>
+
+    <section class="section-card">
+      <h3>🎯 Our Mission</h3>
+      <p>We aim to bring excitement, opportunity, and trust to every participant by ensuring every draw is fair, verifiable, and rewarding.</p>
+    </section>
+
+    <section class="section-card">
+      <h3>🤝 Our Promise</h3>
+      <p>We uphold transparency, fairness, and user satisfaction. Every winner is verified, and every prize is genuine.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; <span id="year"></span> LuckyDraw. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

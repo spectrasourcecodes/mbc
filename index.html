@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google" content="notranslate">
+  <title>Dream | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <!-- Menu Button -->
+    <button class="icon-btn" aria-label="Menu">
+      <i id="menu-btn" class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="logo">
+      <div class="logo-ar">حلم</div>
+      <div class="logo-en">DREAM</div>
+    </div>
+    <button id="lang-btn" class="icon-btn">EN 🌐</button>
+  </header>
+
+  <!-- Language Selector Modal -->
+  <div id="lang-modal" class="lang-modal" aria-hidden="true">
+    <div class="lang-box">
+      <h3>Select Language</h3>
+      <ul class="lang-list">
+        <li data-lang="en">English</li>
+        <li data-lang="ar">العربية</li>
+        <li data-lang="fr">Français</li>
+        <li data-lang="es">Español</li>
+        <li data-lang="de">Deutsch</li>
+        <li data-lang="zh">中文</li>
+        <li data-lang="hi">हिन्दी</li>
+        <li data-lang="pt">Português</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Side menu -->
+  <nav id="side-menu" class="side-menu" aria-hidden="true">
+    <div class="menu-inner">
+      <button id="menu-close" class="back-btn">←</button>
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="winners.html">Winners</a></li>
+        <li><a href="prizes.html">Prizes</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">F.A.Q</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main home">
+    <!-- Hero Card -->
+    <section class="hero">
+      <div class="hero-card">
+        <div id="hero-slider" class="hero-slider">
+          <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=60')"></div>
+          <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1543832923-2b2c0ce0bdc7?auto=format&fit=crop&w=1200&q=60')"></div>
+          <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60')"></div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-top small">WINNERS ARE MADE</h1>
+          <h2 class="hero-main">EVERY DAY</h2>
+          <p class="hero-highlight">STEP INTO YOUR MOMENT.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="subscribe-section">
+      <p class="hero-sub">Your knowledge could make you a Millionaire!</p>
+      <p class="hero-submuted">Enter your mobile number to receive OTP</p>
+
+      <form id="subscribe-form" class="subscribe-form" novalidate>
+        <div class="input-row">
+          <button type="button" class="country-btn">+966 ▾</button>
+          <input id="phone" class="input phone-input" placeholder="Your Phone Number" inputmode="numeric" pattern="[0-9]*">
+        </div>
+
+        <div class="input-row">
+          <div class="operator-icon">📶</div>
+          <select id="operator" class="input select-input">
+            <option value="">Select your operator</option>
+            <option value="operator1">Operator 1</option>
+            <option value="operator2">Operator 2</option>
+            <option value="operator3">Operator 3</option>
+          </select>
+        </div>
+
+        <button id="subscribe-btn" class="btn-cta" type="submit" disabled>SUBSCRIBE</button>
+      </form>
+
+      <p class="terms">
+        By clicking subscribe, you confirm that you are over 18 and agree with the 
+        <a href="terms.html">Terms & Conditions</a> & 
+        <a href="terms.html">Privacy Policy</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- <footer class="footer">© <span id="year"></span> Dream</footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
