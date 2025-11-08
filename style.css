@@ -89,6 +89,20 @@ body {
   cursor: pointer;
 }
 
+nav ul{
+  padding: 0px;
+}
+nav ul li{
+  padding: 20px;
+  /* border: 1px solid  #ccc; */
+  /* background-color:  #ccc; */
+  box-shadow: 1px 1px 15px 1px  #ccc;
+  border-radius: 10px;
+}
+
+nav ul li a{
+  padding: 20px;
+}
 /* ========== Main Sections ========== */
 .main {
   padding-top: 30px;
@@ -194,15 +208,26 @@ body {
   padding: 0.4rem 0.6rem;
 }
 .input {
-  background: none;
   border: none;
   color: #fff;
   flex: 1;
   padding: 0.5rem;
   font-size: 1rem;
+  background: none;
+  outline: none;
 }
 .input::placeholder { color: #ccc; }
-
+.country-input{
+  width: 50px;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+.country-input::placeholder{
+  color: white;
+}
 .country-btn, .operator-icon {
   background: none;
   border: none;
@@ -473,4 +498,11 @@ body {
 
 .lang-list li:hover {
   background: rgba(255,255,255,0.2);
+}
+
+
+option{
+  color: black;
+  text-align: center;
+  background-color:   rgba(255,255,255,0.2);
 }

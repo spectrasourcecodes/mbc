@@ -62,16 +62,12 @@
     <section class="hero">
       <div class="hero-card">
         <div id="hero-slider" class="hero-slider">
-          <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=60')"></div>
-          <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1543832923-2b2c0ce0bdc7?auto=format&fit=crop&w=1200&q=60')"></div>
-          <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60')"></div>
+          <div class="slide active" style="background-image:url('./img/banner1-en.png'); background-position: center;"></div>
+          <div class="slide" style="background-image:url('./img/banner2-en.png'); background-position: center;"></div>
+          <div class="slide" style="background-image:url('./img/banner4-en.png'); background-position: center;"></div>
         </div>
 
-        <div class="hero-content">
-          <h1 class="hero-top small">WINNERS ARE MADE</h1>
-          <h2 class="hero-main">EVERY DAY</h2>
-          <p class="hero-highlight">STEP INTO YOUR MOMENT.</p>
-        </div>
+        
       </div>
     </section>
 
@@ -82,17 +78,18 @@
 
       <form id="subscribe-form" class="subscribe-form" novalidate>
         <div class="input-row">
-          <button type="button" class="country-btn">+966 ▾</button>
-          <input id="phone" class="input phone-input" placeholder="Your Phone Number" inputmode="numeric" pattern="[0-9]*">
+          <input class="country-input" type="tel" name="" id="" placeholder="+966" maxlength="4">
+          <input type="number" id="phone" class="input phone-input" placeholder="Your Phone Number" inputmode="numeric" pattern="[0-9]*">
         </div>
 
         <div class="input-row">
           <div class="operator-icon">📶</div>
           <select id="operator" class="input select-input">
-            <option value="">Select your operator</option>
-            <option value="operator1">Operator 1</option>
-            <option value="operator2">Operator 2</option>
-            <option value="operator3">Operator 3</option>
+            <option>Select your operator</option>
+            <option>ZAIN</option>
+            <option>STC</option>
+            <option>MOBILITY</option>
+            <option>LIBARA</option>
           </select>
         </div>
 
