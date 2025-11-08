@@ -58,7 +58,7 @@ body {
 }
 
 .side-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   width: 80%;
@@ -218,12 +218,15 @@ nav ul li a{
 }
 .input::placeholder { color: #ccc; }
 .country-input{
-  width: 50px;
+  width: 20%;
   background: none;
   border: none;
   color: white;
   outline: none;
   font-size: 1rem;
+}
+.phone-input{
+  width: 80%;
 }
 .country-input::placeholder{
   color: white;
